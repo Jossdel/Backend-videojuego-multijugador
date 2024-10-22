@@ -26,6 +26,10 @@ class Mokepon {
 }
 
 const jugadores = [];
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/index.html');
+  });
+  
 
 app.get("/unirse", (req, res) => {
     const id = `${Math.random()}`;
