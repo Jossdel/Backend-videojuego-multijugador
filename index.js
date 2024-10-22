@@ -27,16 +27,6 @@ class Mokepon {
 
 const jugadores = [];
 
-  
-
-// Sirve archivos estáticos desde la carpeta 'public'
-app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
-});
-
-
 app.get("/unirse", (req, res) => {
     const id = `${Math.random()}`;
     const jugador = new Jugador(id);
@@ -72,6 +62,4 @@ app.post("/mokepon/:jugadorId/posicion", (req, res) => {
     res.end();
 });
 
-app.listen(5000, () => {
-    console.log("El servidor está funcionando");
-});
+module.exports = app;
