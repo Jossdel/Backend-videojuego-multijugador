@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon ./programar/mokepon/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Josue Delgadillo",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.21.1",
     "nodemon": "^3.1.7"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jossdel/Backend-videojuego-multijugador.git"
