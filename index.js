@@ -40,8 +40,8 @@ app.post("/mokepon/:jugadorId", (req, res) => {
   if (jugadorIndex => 0) {
     jugadores[jugadorIndex].asignarMokepon(mokepon)
   }
-    console.log(jugadores); 
-    console.log(jugadorId);
+    // console.log(jugadores); 
+    // console.log(jugadorId);
     res.end();
 });
 app.listen(5000, () => {
